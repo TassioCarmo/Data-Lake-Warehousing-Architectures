@@ -1,199 +1,228 @@
-# Unidade 1 – Modelagem de dados e Sistemas Gerenciadores de Banco de Dados Relacionais / Data Modeling and Relational Database Management Systems
 
-Este repositório contém o material da disciplina de Bancos de Dados Relacionais e Linguagem SQL, parte do programa de pós-graduação.
+# Glossário de Termos em Gestão de Dados e Transformação Digital | Glossary of Data Management and Digital Transformation Terms
 
-## Sumário | Summary
-- [Processo de Modelagem de Dados | Data Modeling Process](#processo-de-modelagem-de-dados--data-modeling-process)
-- [Entidades, Atributos e Regras de Negócio | Entities, Attributes and Business Rules](#entidades-atributos-e-regras-de-negócio--entities-attributes-and-business-rules)
-- [Fundamentos de Relacionamentos | Relationship Fundamentals](#fundamentos-de-relacionamentos--relationship-fundamentals)
-- [Modelagem Histórica e Recursiva | Historical and Recursive Modeling](#modelagem-histórica-e-recursiva--historical-and-recursive-modeling)
-- [Aplicações Práticas | Practical Applications](#aplicações-práticas--practical-applications)
-- [Glossário | Glossary](#glossário--glossary)
+## Sumário
+- [Cloud Computing (Computação em Nuvem)](#cloud-computing-computação-em-nuvem)
+- [Transformação Digital (Digital Transformation)](#transformação-digital-digital-transformation)
+- [Data Driven (Orientado por Dados)](#data-driven-orientado-por-dados)
+- [LGPD (Lei Geral de Proteção aos Dados)](#lgpd-lei-geral-de-proteção-aos-dados--lgpd-general-data-protection-law)
+- [Dados (Data)](#dados-data)
+- [Pirâmide DIKW (DIKW Pyramid)](#pirâmide-dikw-dikw-pyramid)
+- [Big Data](#big-data)
+- [IoT (Internet of Things)](#iot-internet-of-things--iot-internet-das-coisas)
+- [Inteligência Empresarial (Business Intelligence)](#inteligência-empresarial-business-intelligence)
+- [Dados Estruturados x Não Estruturados](#dados-estruturados-x-não-estruturados-structured-vs-unstructured-data)
+- [Data Analytics (Análise de Dados)](#data-analytics-análise-de-dados)
+- [Data Warehouse (Armazém de Dados)](#data-warehouse-armazém-de-dados)
+- [Papel do Cientista de Dados](#papel-do-cientista-de-dados-data-scientist-role)
+- [Data Literacy (Alfabetização em Dados)](#data-literacy-alfabetização-em-dados)
+- [KPI (Key Performance Indicators)](#kpi-key-performance-indicators--indicadores-chave-de-desempenho)
+- [OKR (Objectives and Key Results)](#okr-objectives-and-key-results--objetivos-e-resultados-chave)
+- [NPS (Net Promoter Score)](#nps-net-promoter-score)
+- [Conceitos Adicionais](#conceitos-adicionais)
+- [Notas Importantes sobre Gestão de Dados](#notas-importantes-sobre-gestão-de-dados)
 
-## Processo de Modelagem de Dados | Data Modeling Process
+## Cloud Computing (Computação em Nuvem)
+Disponibilização sob demanda de recursos computacionais, especialmente armazenamento de dados e capacidade de processamento, sem o gerenciamento ativo direto do usuário. Os serviços são acessados pela internet, permitindo escalabilidade e flexibilidade.
 
-### Dados vs Informações | Data vs Information
-- **Dados**: Material bruto
-- **Informação**: Conhecimento, inteligência, dado com significado ou função especial. Geralmente, é um resultado de combinação, comparação, análise ou cálculos.
+**Exemplo:** Amazon Web Services (AWS), Microsoft Azure e Google Cloud Platform oferecem infraestrutura, plataformas e software como serviços.
 
-### O que é um Banco de Dados? | What is a Database?
-Um conjunto centralizado e estruturado de dados armazenados em um sistema de computador para fornecer recursos para recuperar, adicionar, modificar e excluir dados quando necessário.
+## Transformação Digital (Digital Transformation)
+Processo de adoção e integração de tecnologias digitais em todos os aspectos de uma organização, transformando fundamentalmente a forma como a empresa opera e entrega valor aos clientes. Envolve mudanças culturais, operacionais e de modelo de negócio.
 
-### Ciclo de Vida da Ciência dos Dados | Data Science Lifecycle
-1. Entendimento do Problema
-2. Coleta de Dados
-3. Processamento de Dados
-4. Exploração de Dados
-5. Comunicação de Resultados
-6. Feedback
+**Elementos principais:**
+1. **Revolução na cultura empresarial** - Mudança de atitudes, costumes e hábitos voltados ao digital
+2. **Aproveitamento da Internet das Coisas (IoT)** - Conexão de objetos físicos à internet
+3. **Substituição de tecnologias legadas** - Migração de sistemas monolíticos para tecnologias ágeis
+4. **Mudança no modelo de negócio** - Adaptação para competir no ambiente digital moderno
 
-### Etapas da Modelagem de Dados | Data Modeling Steps
-1. **Projeto Conceitual | Conceptual Design**
-   - Mapeamento dos requisitos e variáveis necessárias
-   - Criação de diagrama conceitual
-   - Documentação das necessidades de informação
-   - Identificação de entidades e relacionamentos
+## Data Driven (Orientado por Dados)
+Abordagem que utiliza dados para identificar padrões, deduções e percepções que fundamentam o processo de tomada de decisões, reduzindo a interferência de vieses ou emoções pessoais.
 
-2. **Projeto Lógico | Logical Design**
-   - Transformação do projeto conceitual em diagrama equivalente
-   - Geração de scripts para criação de estruturas
-   - Descrição detalhada dos dados sem preocupação com implementação física
-   - Desenvolvimento do Diagrama Entidade Relacionamento (DER)
+**Data Driven Decision Making (DDDM)** consiste no processo de coletar dados de acordo com os indicadores-chave de desempenho (KPIs) e transformá-los em percepções acionáveis.
 
-3. **Projeto Físico | Physical Design**
-   - Execução dos scripts de criação
-   - Implementação de políticas de armazenamento
-   - Otimização de acesso aos dados
-   - Estruturas de cache, backup e manutenção
-   - Definição de tipos de dados e tabelas
+**5 passos para ser Data Driven:**
+1. Entender a visão de futuro da empresa (através de OKRs ou KPIs)
+2. Encontrar fontes de dados relevantes
+3. Organizar os dados (criar painéis executivos)
+4. Analisar os dados
+5. Tirar conclusões e implementar ações
 
-## Entidades, Atributos e Regras de Negócio | Entities, Attributes and Business Rules
+## LGPD (Lei Geral de Proteção aos Dados) | LGPD (General Data Protection Law)
+Lei 13.709 de 14 de Agosto de 2018 que dispõe sobre o tratamento de dados pessoais no Brasil. Estabelece regras para coleta, armazenamento, tratamento e compartilhamento de dados pessoais.
 
-### Entidades | Entities
-- Conjunto de coisas similares que podem ser listadas
-- Permitem tirar conclusões úteis sobre fatos aparentemente aleatórios
-- Itens sobre os quais armazenamos dados descritivos
+**Pontos importantes:**
+- Entrou em total conformidade em agosto de 2021
+- Exige tratamento adequado de dados pessoais e sensíveis
+- Aplica-se também a subcontratantes (fornecedores e parceiros)
+- Multas podem chegar a 2% do faturamento anual ou até 50 milhões de reais por infração
 
-### Atributos | Attributes
-- Itens da coleção de dados que descrevem uma entidade
-- Possuem valor único (número, string, data, imagem, som, etc.)
-- Podem ser voláteis (mudam constantemente) ou não voláteis (raramente mudam)
+**Dados Pessoais:** Toda informação relacionada a pessoa natural identificada ou identificável (nome, endereço, CPF, etc.)
 
-### Regras de Negócio | Business Rules
-- O Diagrama Entidade Relacionamento (DER) representa os requisitos de dados
-- Modelos conceituais são independentes da tecnologia a ser utilizada
+**Dados Sensíveis:** Dados sobre origem racial/étnica, convicção religiosa, opinião política, saúde, vida sexual, dados genéticos/biométricos.
 
-#### Objetivos do DER | ERD Objectives
-- Capturar todas as informações necessárias
-- Garantir que os dados apareçam apenas uma vez
-- Não modelar dados derivados
-- Projetar dados em local lógico e previsível
+## Dados (Data)
+Elementos que constituem a matéria-prima da informação. Podem ser definidos como conhecimento bruto, que ainda não foi devidamente tratado para prover insights para uma organização.
 
-### Relacionamentos | Relationships
-- Representam conexões importantes entre entidades
-- São bidirecionais com nomes nas duas pontas
-- Possuem opcionalidade e cardinalidade
+**Tipos de dados:**
+- **Dados Quantitativos (Numeric Data):**
+  - **Discretos:** Valores inteiros (número de ovos, número de ataques de asma)
+  - **Contínuos:** Valores que podem assumir qualquer número real (volume, área, peso, velocidade)
+- **Dados Qualitativos (Categorical Data):**
+  - **Nominais:** Categorias sem ordem inerente (cor dos olhos, fumante/não fumante)
+  - **Ordinais:** Categorias com ordem natural (baixo/médio/alto, graus de escolaridade)
 
-#### Opcionalidade | Optionality
-- Indica se um relacionamento deve sempre existir
+## Pirâmide DIKW (DIKW Pyramid)
+Hierarquia que estabelece relações entre Dados (Data), Informação (Information), Conhecimento (Knowledge) e Sabedoria (Wisdom).
 
-#### Cardinalidade | Cardinality
-- Indica a quantidade em que o relacionamento pode ocorrer
-- Pode ser um-um, um-muitos ou muitos-muitos
+1. **Dados (Data):** Fatos brutos, símbolos ou sinais sem contexto (base da pirâmide)
+2. **Informação (Information):** Dados organizados ou estruturados com relevância para um propósito específico
+3. **Conhecimento (Knowledge):** Síntese de múltiplas fontes de informação ao longo do tempo, que responde a perguntas "como"
+4. **Sabedoria (Wisdom):** Conhecimento integrado e aplicado com discernimento, que permite saber as "coisas certas a fazer" (topo da pirâmide)
 
-### Super e Subtipos | Super and Subtypes
-- Subdivisão de uma entidade quando um grupo de instâncias possui propriedades especiais
-- Subtipo herda todos os atributos e relacionamentos do supertipo
-- Subtipo pode ter atributos e relacionamentos próprios
+**Fluxo da Pirâmide:** Cada bloco é um passo em direção a um nível superior, agregando valor aos dados iniciais através de significado e contexto.
 
-### Tipos de Regras de Negócio | Types of Business Rules
-- **Procedurais**: Definem fluxos de trabalho ou processos
-- **Estruturais**: Indicam tipos de informações e inter-relacionamentos
+## Big Data
+Capacidade de explorar, analisar e extrair conclusões de um grande volume de dados, caracterizado pelos "Vs" do Big Data:
 
-## Fundamentos de Relacionamentos | Relationship Fundamentals
+- **Volume:** Quantidade massiva de dados gerados (medidos em Zettabytes ou Yottabytes)
+- **Velocidade:** Rapidez com que os dados são processados e disponibilizados
+- **Variedade:** Diversidade de fontes e tipos de dados (estruturados e não-estruturados)
+- **Variabilidade:** Inconsistência nos dados e seus significados ao longo do tempo
+- **Veracidade:** Precisão e confiabilidade dos dados
+- **Visualização:** Capacidade de representar os dados de forma compreensível
+- **Valor:** Benefício comercial ou operacional extraído dos dados
 
-### UIDs (Identificadores Únicos) | Unique Identifiers
-- Valores únicos identificáveis para cada linha de uma entidade
-- Sinônimo de chave primária na prática
-- Uma entidade pode ter mais de um identificador único
+**Exemplo prático:** E-commerces utilizam Big Data para ampliar oportunidades de vendas, direcionando produtos baseados no perfil de busca do consumidor, com recomendações como "o que outros também compraram".
 
-### Tipos de Entidades | Entity Types
-- **Entidade Regular**: Estrutura com atributos simples
-- **Entidade Fraca**: Estrutura com atributos compostos por atributos de outras entidades
+## IoT (Internet of Things) | IoT (Internet das Coisas)
+Conexão entre objetos físicos utilizando sensores, chips e softwares, permitindo que troquem informações entre si e com pessoas. Essa conexão pode ocorrer via radiofrequência (RFID), WiFi, Ethernet, Bluetooth, entre outras tecnologias.
 
-### Implementação de Relacionamentos | Relationship Implementation
-- Determinada pela cardinalidade mínima e máxima das entidades
-- Três formas básicas:
-  1. Tabela própria
-  2. Colunas adicionais dentro da tabela entidade
-  3. Fusão de tabelas de entidades
+**Exemplo:** Dispositivos domésticos inteligentes como termostatos, sistemas de iluminação e eletrodomésticos que podem ser controlados remotamente e compartilham dados entre si.
 
-| **Tipo de Relacionamento** | **Características** | **Obrigatoriedades** |
-|---------------------------|-------------------|-------------------|
-| **1:1 (um para um)** | Campo de ligação em comum que pode ser utilizado uma única vez em ambas entidades | Mesmo atributo de valor único dos dois lados |
-| **1:N (um para muitos)** | Campo de ligação que pode ser utilizado uma vez no lado primário e repetido no secundário | Atributo de valor único do lado primário e correspondente que pode se repetir no secundário |
-| **M:N (muitos para muitos)** | Existe no modelo conceitual, mas na implementação transforma-se em dois relacionamentos 1:N | Segue as regras do relacionamento 1:N |
+## Inteligência Empresarial (Business Intelligence)
+Processo de coleta, organização, análise, compartilhamento e monitoramento de informações para suporte à gestão de negócios. Permite que a gestão seja mais eficiente através do uso das métricas corretas.
 
-### Normalização | Normalization
+**Aplicações:**
+- Poluição sonora
+- Otimização da coleta de lixo
+- Controle de tráfego
+- Gestão da distribuição de energia elétrica
+- Segurança pública
+- Análise de rotas, crimes, doenças e desastres
+- Geomarketing
 
-#### Primeira Forma Normal (1FN) | First Normal Form
-- Elimina atributos multivalorados
-- Cada instância de entidade deve ter apenas um valor
-- Remove dados repetidos criando novas entidades relacionadas
+## Dados Estruturados x Não Estruturados (Structured vs. Unstructured Data)
+**Dados Estruturados:** Seguem uma estrutura rígida de armazenamento, como registros em tabelas de um banco de dados SQL. São facilmente organizados e consultados.
 
-#### Segunda Forma Normal (2FN) | Second Normal Form
-- Atende à 1FN
-- Registros não-chave devem depender da chave primária em sua totalidade
-- Previne redundância de dados criando entidades separadas
+**Dados Não Estruturados:** Provenientes de fontes diversas como internet e redes sociais, em vários formatos (texto, imagem, som, vídeos). Precisam de processamento antes de serem cruzados com outros dados e analisados.
 
-#### Terceira Forma Normal (3FN) | Third Normal Form
-- Nenhum atributo não-UID pode depender de outro atributo não-UID
-- Proíbe dependências transitivas
-- Elimina dados desnecessários que poderiam causar desatualização
+## Data Analytics (Análise de Dados)
+Processo de examinar conjuntos de dados para descobrir padrões, extrair conclusões e apoiar a tomada de decisões. Pode ser aplicado em vários segmentos como bancos (prevenção de fraudes), educação (progresso dos alunos) e varejo (comportamento de clientes).
 
-| **Forma Normal** | **Requisitos** | **Objetivo** | **Exemplo de Violação** |
-|-----------------|--------------|------------|---------------------|
-| **1FN** | Eliminar grupos repetitivos e garantir valores atômicos | Cada campo com apenas um valor por registro | `"1234, 5678"` em uma célula |
-| **2FN** | 1FN + atributos não-chave dependem da chave primária inteira | Eliminar dependências parciais | `Curso` depender só de `Aluno_ID` |
-| **3FN** | 2FN + atributos não-chave dependem somente da chave primária | Remover dependências transitivas | `Cidade` → `Estado` → `País` |
+**Etapas do processo:**
+1. Coleta
+2. Ingestão e transformação
+3. Armazenamento
+4. Análise
+5. Desenvolvimento de algoritmos
+6. Visualização
 
-## Modelagem Histórica e Recursiva | Historical and Recursive Modeling
+**Data Driven vs. Analytics Driven:**
+- **Data Driven:** Abordagem mais quantitativa, baseada em números e modelos preditivos
+- **Analytics Driven:** Considera também o aspecto qualitativo, estabelecendo padrões e correlações entre os dados, interpretando o contexto
 
-### Modelagem Histórica | Historical Modeling
-- Necessária quando precisamos:
-  - Registrar auditoria
-  - Acompanhar mudanças de valores na linha do tempo
-  - Produzir relatórios com base em dados antigos
-  - Manter versões antigas por tempo determinado
-- Implementada com relação N:N transformada em duas relações 1:N
+## Data Warehouse (Armazém de Dados)
+Repositório centralizado de dados históricos e processados, usado para análises. Características:
+- Base analítica centralizada
+- Execução de pipelines geralmente fora do horário comercial
+- Contém dados históricos e processados
 
-### Arcos | Arcs
-- Esclarecem relacionamentos OR exclusivos
-- Representam relacionamentos não coexistentes (apenas um ocorre por vez)
-- Pertencem a uma entidade e podem incluir múltiplos relacionamentos
-- Devem consistir em relacionamentos da mesma opcionalidade
-- Podem ter cardinalidade diferente
+## Papel do Cientista de Dados (Data Scientist Role)
+Profissionais que trabalham com dados em diferentes níveis:
 
-### Hierarquias | Hierarchies
-- Comuns em organogramas corporativos e escolares
-- Diferença entre hierarquia nos relacionamentos e representação no mundo real
-- Relacionamento hierárquico: relações explícitas como gráfico organizacional
-- Relacionamento recursivo (auto-relacionamento): representação mais simples usando apenas uma entidade
+**Analista de Dados:** Profissional dedicado a garimpar, catalogar, analisar e interpretar o volume de informações e dados obtidos por meios digitais ou analógicos.
 
-## Aplicações Práticas | Practical Applications
+**Engenheiro de Dados:** Responsável pelo desenvolvimento, construção, teste e manutenção de arquiteturas de processamento em grande escala. Cria o pipeline dos dados, desde a coleta até a entrega para análise.
 
-### Modelo Relacional | Relational Model
-- Transforma o modelo conceitual em design de banco de dados
-- Converte entidades, atributos, relacionamentos e identificadores em objetos de banco de dados
-- Coleção de objetos ou relações com operadores que mantêm integridade, precisão e consistência
+**Cientista de Dados:** Trabalha com massas de dados estruturados e não estruturados, utilizando habilidades em Matemática, Estatística, Ciência da Computação e Programação para limpar, tratar e organizar os dados.
 
-### SQL | Structured Query Language
-- Permite acesso eficiente a dados em bancos relacionais
-- Elimina pesquisa manual com comandos simples
+## Data Literacy (Alfabetização em Dados)
+Capacidade de ler, entender, criar e comunicar dados como informação. Benefícios para empresas:
+- **Competitividade:** Conversão de dados em rentabilidade
+- **Inovação:** Melhor sensibilidade às mudanças no comportamento dos clientes
+- **Desempenho:** Avaliação de KPIs para otimização de processos
+- **Estratégia:** Alinhamento estratégico da organização com o mercado
 
-### Conceitos Fundamentais | Fundamental Concepts
-- **Chave Primária**: Garante valores não nulos e identifica cada linha de forma exclusiva
-- **Chave Candidata**: Coluna que pode ser selecionada como chave primária
-- **Chave Exclusiva**: Restrição que exige valor exclusivo em coluna ou conjunto de colunas
-- **Chave Estrangeira**: Coluna com valores correspondentes à chave primária de outra tabela
-- **Linha**: Entrada em uma tabela com valores para cada coluna
-- **Coluna**: Implementação de atributo ou relacionamento
+## KPI (Key Performance Indicators) | Indicadores-Chave de Desempenho
+Métricas utilizadas para mensurar o desempenho de uma empresa e validar os objetivos definidos na estratégia. Características:
+- Devem ser objetivos
+- Mensuráveis
+- Verificáveis
+- Com finalidade definida e valor agregado
 
-### Regras de Integridade | Integrity Rules
-- Definem o estado correto das relações de um banco de dados
-- Garantem consistência dos dados
+**Tipos de KPIs:**
+- **KPIs primários:** Métricas principais diretamente ligadas aos objetivos estratégicos
+- **KPIs secundários:** Métricas de suporte que complementam os KPIs primários
+- **KPIs práticos:** Métricas operacionais do dia a dia
 
-| **Tipo de Restrição** | **Explicação** |
-|----------------------|---------------|
-| **Integridade das Entidades** | Chave primária exclusiva e não nula |
-| **Integridade Referencial** | Chave estrangeira corresponde a valor de chave primária existente |
-| **Integridade das Colunas** | Valores consistentes com formato definido |
-| **Integridade Definida pelo Usuário** | Dados cumprem regras da empresa |
+**Exemplo:** Para um site, o tráfego pode ser um KPI primário, enquanto page views seria um KPI secundário ou prático.
 
-### Padronização de Nomes | Naming Standards
-- Nome da tabela: plural do nome da entidade
-- Nomes das colunas: idênticos aos nomes dos atributos (caracteres especiais substituídos por _)
-- Evitar palavras-chave do SQL
-- Usar abreviatura do nome da tabela para nomear chave estrangeira
+## OKR (Objectives and Key Results) | Objetivos e Resultados-Chave
+Metodologia que estabelece uma direção clara para o negócio ou produto baseada na definição de objetivos (metas e intenções) e resultados (indicadores de progresso). Diferentemente dos KPIs, os OKRs são planejados para elevar o patamar do negócio, não apenas monitorar o comportamento esperado.
 
+**Características:**
+- Foco em objetivos não tão principais
+- Trabalha com prazos curtos (trimestrais geralmente)
+- Requer acompanhamento frequente de resultados
 
+## NPS (Net Promoter Score)
+Metodologia de satisfação de clientes desenvolvida para avaliar o grau de fidelidade através de uma única pergunta: "Em uma escala de 0 a 10, o quanto você recomendaria a empresa X a um amigo ou colega?"
+
+**Classificação dos clientes:**
+- **Promotores:** Notas 9 ou 10
+- **Neutros:** Notas 7 ou 8
+- **Detratores:** Notas de 0 a 6
+
+**Cálculo do NPS:** % de clientes promotores - % de clientes detratores
+
+**Exemplo:** Em 10 respostas, sendo 6 promotores, 2 neutros e 2 detratores:
+- Promotores = 60% (6/10)
+- Detratores = 20% (2/10)
+- NPS = 60% - 20% = 40%
+
+## Conceitos Adicionais
+
+### Shadow IT
+Uso de sistemas de TI, dispositivos, software, aplicativos e serviços sem aprovação explícita do departamento de TI da organização. Representa um risco à segurança da informação e à governança de dados.
+
+### Nuvem Privada x Pública (Private vs. Public Cloud)
+- **Nuvem Privada:** Data center com frames conversando entre si, sem passar pela internet pública
+- **Nuvem Pública:** Serviços de computação oferecidos por terceiros pela internet
+
+### Data Governance (Governança de Dados)
+Gestão de dados por diversas áreas da organização, garantindo qualidade, segurança, compliance e utilização eficiente dos dados como ativo organizacional.
+
+### Análises de Dados (Types of Data Analysis)
+- **Análise Descritiva:** O que aconteceu?
+- **Análise Diagnóstica:** Por que aconteceu?
+- **Análise Preditiva:** O que vai acontecer?
+- **Análise Prescritiva:** O que devemos fazer?
+
+### Silos de Dados (Data Silos)
+Repositórios isolados de dados que não são compartilhados entre diferentes departamentos ou sistemas, prejudicando a gestão do conhecimento organizacional.
+
+---
+
+## Notas Importantes sobre Gestão de Dados
+
+1. Cluster de dados permite segmentação para maior entendimento
+2. Governança de dados envolve a gestão de dados por diversas áreas
+3. Analytics utiliza Machine Learning para entender tendências em Big Data
+4. Start-ups devem nascer com mentalidade data-driven
+5. O dado processado gera informação, que ao longo do tempo traz conhecimento
+6. AI projeta o futuro treinando-se em dados passados
+7. Silos de dados prejudicam a gestão de conhecimento organizacional
+8. Modelos de AI não-determinísticos evoluem com novos treinamentos
+9. A necessidade de cloud computing cresceu com o aumento exponencial de dados
+10. Dashboards visualizam KPIs para tomada de decisão
