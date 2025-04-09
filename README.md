@@ -1,20 +1,23 @@
-
-# Disciplina: Bancos de Dados Relacionais e Linguagem SQL
+# Disciplina: Arquitetura de Dados, Data Lake e Data Warehouse
 
 ## Ementa
 
-Esta disciplina aborda os principais fundamentos e práticas relacionados a bancos de dados relacionais e à linguagem SQL. São explorados:
+Esta disciplina apresenta os principais conceitos e tecnologias associados às arquiteturas modernas de dados, com ênfase em Data Lakes e Data Warehouses. São explorados:
 
-- Modelagem de entidades e relacionamentos  
-- Metodologias de projeto de bancos de dados  
-- Ferramentas de modelagem de dados  
-- Modelo relacional e restrições de integridade  
-- Linguagens de definição e manipulação de dados (DDL e DML)  
-- Especificação de consultas com SQL  
-- Álgebra relacional  
-- Modelagem de dados orientada a objetos  
-- Normalização de dados  
-- Sistemas de Gerenciamento de Banco de Dados (SGBDs) livres, como **MySQL** e **PostgreSQL**
+- Conceitos de Data Lake e Data Warehouse  
+- Dados estruturados vs. dados não estruturados  
+- Produtores e consumidores de dados  
+- Logical Data Lake e Data Ponds  
+- Blocos funcionais em uma arquitetura de dados  
+- Schema on-write vs. schema on-read  
+- Sincronização de fluxos de dados independentes e dependentes  
+- Arquitetura corporativa: Enterprise Data Hub e Data Mesh  
+- Construção de arquiteturas com alta disponibilidade (HA)  
+- Modelagem multidimensional e construção de dimensões em DW  
+- Engines de Data Warehousing  
+- Orquestração de transformações em Data Warehouse  
+- Organização em camadas de um Data Lake  
+- Comparativo: Data Lake on-premise vs. na nuvem
 
 ## Objetivos da Disciplina
 
@@ -22,16 +25,21 @@ Esta disciplina aborda os principais fundamentos e práticas relacionados a banc
 
 Capacitar os alunos a:
 
-- Analisar cenários complexos de negócios  
-- Criar modelos de dados eficazes  
-- Construir representações conceituais das informações de uma organização  
-- Implementar o design de banco de dados com ferramentas de mercado  
-- Automatizar tarefas de criação de estruturas de banco de dados
+- Compreender os fundamentos de arquiteturas modernas de dados  
+- Diferenciar e aplicar conceitos de Data Lake e Data Warehouse conforme o cenário organizacional  
+- Analisar a organização dos dados e propor soluções baseadas em arquiteturas escaláveis e resilientes  
+- Projetar ambientes de dados adequados à realidade de grandes volumes, variedade e velocidade (Big Data)  
+- Avaliar tecnologias, técnicas de modelagem e estratégias de orquestração para ambientes analíticos modernos
 
 ### Objetivos Específicos
 
-- Compreender e aplicar os recursos básicos e intermediários da linguagem SQL  
-- Gerenciar dados em bancos de dados relacionais  
-- Concluir a implantação de projetos de banco de dados em SGBDs livres
+- Identificar produtores e consumidores de dados e suas funções nos processos de decisão  
+- Compreender os conceitos de dados estruturados e não estruturados  
+- Conhecer os principais elementos arquiteturais de Data Lake e Data Warehouse  
+- Utilizar conceitos de ETL, modelagem dimensional e orquestração de processos  
+- Avaliar cenários para aplicação de schema on-read e schema on-write  
+- Projetar soluções baseadas em arquiteturas com alta disponibilidade  
+- Comparar diferentes formas de armazenamento e organização de dados, incluindo abordagens on-premise e em nuvem
 
 ---
+
