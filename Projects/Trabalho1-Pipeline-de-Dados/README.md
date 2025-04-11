@@ -1,4 +1,3 @@
-```markdown
 # Exercícios de Arquitetura e Produção de Dados
 
 Este repositório contém um conjunto de exercícios práticos sobre Arquitetura de Dados, ETL e Governança de Dados, com perguntas e respostas comentadas para ajudá‑lo a consolidar conceitos fundamentais.
