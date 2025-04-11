@@ -1,7 +1,5 @@
 # Arquitetura de Dados, Data Lake e Data Warehouse | Data Architecture, Data Lake and Data Warehouse
 
-![Data Architecture Banner](/api/placeholder/800/200)
-
 ## Ementa | Course Description
 
 Esta disciplina apresenta os principais conceitos e tecnologias associados às arquiteturas modernas de dados, com ênfase em Data Lakes e Data Warehouses. O curso explora fundamentos essenciais para o desenvolvimento e implementação de soluções de dados escaláveis em ambientes corporativos modernos.
